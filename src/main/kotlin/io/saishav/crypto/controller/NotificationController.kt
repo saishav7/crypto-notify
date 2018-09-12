@@ -15,8 +15,8 @@ class NotificationController(private val notificationService: NotificationServic
 
     @GetMapping("/tick")
     fun notifyTick() {
-        val prices: List<BtcmTick?> = Instrument.values().map { btcmPriceService.getTick(it) }
-        notificationService.notify(prices.joinToString { "${it?.instrument}: ${it?.lastPrice}" })
+        val prices: List<BtcmTick> = Instrument.values().mapNotNull { btcmPriceService.getTick(it) }
+        notificationService.notify(prices.joinToString { "${it.instrument}: ${it.lastPrice}" })
     }
 
 }
