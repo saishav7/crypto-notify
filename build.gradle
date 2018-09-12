@@ -46,7 +46,8 @@ dependencies {
     compile("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     compile("org.jetbrains.kotlin:kotlin-reflect")
     compile("io.github.microutils:kotlin-logging:1.6.10")
-    compile group: 'com.github.ulisesbocchio', name: 'jasypt-spring-boot-starter', version: '2.1.0'
-    compile group: 'net.gpedro.integrations.slack', name: 'slack-webhook', version: '1.3.0'
+    compile 'com.github.ulisesbocchio:jasypt-spring-boot-starter:2.1.0'
+    compile 'net.gpedro.integrations.slack:slack-webhook:1.3.0'
+    compile 'com.fasterxml.jackson.module:jackson-module-kotlin:2.9.+'
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }

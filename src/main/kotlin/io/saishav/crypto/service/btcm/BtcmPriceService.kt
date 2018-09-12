@@ -13,8 +13,10 @@ import org.springframework.web.client.HttpStatusCodeException
 import org.springframework.web.client.RestTemplate
 
 @Service
-class BtcmPriceService(private val restTemplate: RestTemplate,
-                        @param:Value("\${btcmarkets.baseUrl}") private val baseUrl: String) {
+class BtcmPriceService(
+        private val restTemplate: RestTemplate,
+        @param:Value("\${btcmarkets.baseUrl}") private val baseUrl: String
+) {
 
     fun getTick(instrument: Instrument): BtcmTick? {
         val headers = HttpHeaders()
