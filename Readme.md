@@ -1,7 +1,17 @@
-Simple notification service that fetches cryptocurrency prices and sends a slack notification
+#About
+
+A notification service that fetches cryptocurrency prices and sends slack notifications. This can be extended to create a slack bot that enabled trading, checking balance, etc on demand.
 
 
-#Encrypt props
+
+##Technical Specs
+
+###Spring Boot 2
+###Kotlin
+###Gradle
+
+
+###Encrypt props
 
 The project uses Jasypt to encrypt properties. This is optional, you can
 use properties without encryption if you want
