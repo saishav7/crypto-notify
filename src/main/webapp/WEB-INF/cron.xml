@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cronentries>
+    <cron>
+        <url>/notify/tick</url>
+        <description>Tick notification</description>
+        <schedule>every 1 hours from 08:00 to 23:00</schedule>
+        <timezone>Australia/NSW</timezone>
+    </cron>
+</cronentries>
