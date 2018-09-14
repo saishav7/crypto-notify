@@ -6,12 +6,10 @@ A notification service that fetches cryptocurrency prices and sends slack notifi
 
 ## Technical Specs
 
-### Spring Boot 2
-### Kotlin
-### Gradle
-
-
-### Encrypt props
+Spring Boot 2
+Kotlin
+Gradle
+Encrypt props
 
 The project uses Jasypt to encrypt properties. This is optional, you can
 use properties without encryption if you want
