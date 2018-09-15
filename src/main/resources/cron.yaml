@@ -1,0 +1,5 @@
+cron:
+- description: "Tick notification"
+  url: /notify/tick
+  schedule: every 1 hours from 08:00 to 23:00
+  timezone: Australia/NSW
